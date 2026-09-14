@@ -19,12 +19,10 @@ nhaA gene was found from the reference strain ATCC 15697 (locus tag BLIJ_1765). 
 
 # STEP 3: BLAST the reference against each genome to collect nhaA
 ```
-> ~/danssaltgenes/nhaA_all.ffn
-
 for genome in $(cat ~/danssaltgenes/tentestgenomes.txt); do
-hit=$(blastn -query ~/danssaltgenes/nhaA_ref.ffn -subject /lab/binfantis/genomes/results/$genome/$genome.ffn -outfmt "6 sseqid" -max_target_seqs 1 -max_hsps 1 | head -1)
-seqkit grep -p "$hit" /lab/binfantis/genomes/results/$genome/$genome.ffn >> ~/danssaltgenes/nhaA_all.ffn
-done
+  hit=$(blastn -query ~/danssaltgenes/nhaA_ref.ffn -subject /lab/binfantis/genomes/results/$genome/$genome.ffn -outfmt "6 sseqid" | head -1)
+  seqkit grep -p "$hit" /lab/binfantis/genomes/results/$genome/$genome.ffn
+done > ~/danssaltgenes/nhaA_all.ffn
 
 seqkit stats ~/danssaltgenes/nhaA_all.ffn
 ```
@@ -33,11 +31,16 @@ Second, we set up a for loop that goes through each genome within the tentestgen
 Third, we take that ID stored in "hit" and use seqkit grep to pull the matching gene's DNA out of the same genome's genome.ffn file, and append it (with the >>) onto the end of nhaA_all.ffn.
 The last line checks the outcome
 
+*Of note, > erases whatever is in the file and replaces it with a new outcome, and >> simply appends.
+
 # STEP 4: Clean the headers and remove stop codons
 ```
-seqkit seq -w 0 ~/danssaltgenes/nhaA_all.ffn | awk '/^>/{print $1; next}{print substr($0,1,length($0)-3)}' > ~/danssaltgenes/nhaA_nostop.ffn
-seqkit seq -w 0 puts each sequence on a single line. The awk then does two things: for header lines (those starting with >), it keeps only the first word, which is the locus tag, and drops the description; for the DNA lines, it trims off the last three letters, which is the stop codon.
+seqkit seq --only-id ~/danssaltgenes/nhaA_all.ffn > ~/danssaltgenes/nhaA_clean.ffn
+seqkit subseq -r 1:-4 ~/danssaltgenes/nhaA_clean.ffn > ~/danssaltgenes/nhaA_nostop.ffn
 ```
+
+seqkit seq -w 0 puts each sequence on a single line. Then awk then does two things: for header lines (those starting with a >), it keeps only the first word, which is the locus tag, and drops the description; for the DNA lines, it trims off the last three letters, which is the stop codon.
+
 # STEP 5: Align
 ```
 clustalo -i ~/danssaltgenes/nhaA_nostop.ffn -o ~/danssaltgenes/nhaA_aligned.fasta --outfmt=fasta --force -v
@@ -48,7 +51,7 @@ Clustal Omega lines up and compares the ten nhaA sequences. This saves the the r
 # STEP 6: Build a tree
 ```
 FastTree -nt -gtr ~/danssaltgenes/nhaA_aligned.fasta > ~/danssaltgenes/nhaA_tree.nwk
-FastTree builds a tree showing how the ten genomes' nhaA sequences relate. -nt says the input is nucleotides (DNA), -gtr sets the DNA model, and the > saves the tree into nhaA_tree.nwk
+FastTree builds a tree showing how the ten genomes' nhaA sequences relate. -nt says the input is nucleotides (DNA), -gtr sets the DNA model, and the > saves the tree into nhaA_tree.nwk (TEST HERE)
 ```
 # STEP 7: dN/dS calculaution
 ```
