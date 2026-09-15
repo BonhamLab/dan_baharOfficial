@@ -51,9 +51,11 @@ Clustal Omega lines up and compares the ten nhaA sequences. This saves the the r
 # STEP 6: Build a tree
 ```
 FastTree -nt -gtr ~/danssaltgenes/nhaA_aligned.fasta > ~/danssaltgenes/nhaA_tree.nwk
-FastTree builds a tree showing how the ten genomes' nhaA sequences relate. -nt says the input is nucleotides (DNA), -gtr sets the DNA model, and the > saves the tree into nhaA_tree.nwk (TEST HERE)
+cat ~/danssaltgenes/nhaA_tree.nwk
 ```
+FastTree builds a tree showing how the ten genomes' nhaA sequences relate. -nt says the input is nucleotides (DNA), -gtr sets the DNA model, and the > saves the tree into nhaA_tree.nwk (TEST HERE)
+
 # STEP 7: dN/dS calculaution
 ```
-hyphy fel --alignment ~/danssaltgenes/nhaA_aligned.fasta --tree ~/danssaltg
+hyphy fel --alignment ~/danssaltgenes/nhaA_aligned.fasta --tree ~/danssaltgenes/nhaA_tree.nwk
 ```
