@@ -1,0 +1,8 @@
+name: waafle_env
+channels:
+  - conda-forge
+  - bioconda
+  - biobakery
+dependencies:
+  - waafle
+  - megahit

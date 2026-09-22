@@ -1,0 +1,40 @@
+CONTIG_NAME   CALL   LENGTH    MIN_MAX   AVG_MAX   SYNTENY
+-----------   ----   -------   -------   -------   -----------------------
+ CONTIG_NAME  CONTIG_LENGTH  MIN_MAX_SCORE  AVG_MAX_SCORE  SYNTENY                                                                                                                                          >
+k141_1084    1926           0.9225         0.9345         ABB                                                                                                                                              >
+k141_10950   1325           0.9905         0.9924         AB                                                                                                                                               >
+k141_11066   1074           0.9634         0.9717         AB                                                                                                                                               >
+k141_11513   124664         0.9384         0.9925         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB                                  >
+k141_11747   835            0.9692         0.9727         AB                                                                                                                                               >
+k141_12329   2184           0.9844         0.9908         ABB                                                                                                                                              >
+k141_13030   1733           0.8331         0.8885         AAB                                                                                                                                              >
+k141_13088   4573           0.8435         0.9505         AAAB*A                                                                                                                                           >
+k141_15056   252198         0.8396         0.9804         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*B*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA>
+k141_16524   5801           0.8974         0.9641         ABBBB                                                                                                                                            >
+k141_16555   566            0.8010         0.8396         AB                                                                                                                                               >
+k141_16567   723            0.8415         0.9041         AB                                                                                                                                               >
+k141_1662    1756           0.8455         0.9139         AAB                                                                                                                                              >
+k141_16781   967            0.8304         0.8909         ABB                                                                                                                                              >
+k141_16887   667            0.8378         0.9142         AB                                                                                                                                               >
+k141_19382   5631           0.8869         0.9682         AAAAAB                                                                                                                                           >
+k141_19641   4331           0.8580         0.9716         ABBBB                                                                                                                                            >
+k141_19802   15537          0.8997         0.9734         AAAAAABBB*                                                                                                                                       >
+k141_19985   8338           0.8819         0.9472         AAAAAB                                                                                                                                           >
+k141_20127   1381           0.8327         0.8964         AB                                                                                                                                               >
+k141_21244   2940           0.9569         0.9769         AB                                                                                                                                               >
+k141_22547   5309           0.9681         0.9790         AABB                                                                                                                                             >
+k141_25041   2055           0.8057         0.8418         AB                                                                                                                                               >
+k141_2914    4431           0.8563         0.9396         ABAA                                                                                                                                             >
+k141_29609   106099         0.9295         0.9912         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA                                                                 >
+k141_29854   1910           0.9161         0.9581         AB                                                                                                                                               >
+k141_31699   1845           0.8865         0.9558         ABB                                                                                                                                              >
+k141_32050   1882           0.8414         0.8680         ABB                                                                                                                                              >
+k141_32055   5374           0.8894         0.9721         AAABBB                                                                                                                                           >
+k141_34306   1799           0.8701         0.9125         AAB                                                                                                                                              >
+k141_35083   7093           0.9620         0.9897         AAAAB                                                                                                                                            >
+k141_35837   1644           0.9355         0.9654         AB                                                                                                                                               >
+k141_37138   1927           0.8437         0.8679         AAB                                                                                                                                              >
+k141_3718    640            0.9078         0.9337         AB                                                                                                                                               >
+k141_38365   2170           0.9098         0.9439         AB                                                                                                                                               >
+k141_6698    181595         0.9136         0.9940         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA>
+k141_7075    6208           0.8310         0.9369         AAAAABB                                                                                                                                          

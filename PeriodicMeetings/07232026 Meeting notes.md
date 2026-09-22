@@ -36,4 +36,4 @@ This week, (check all that apply):
 - [ ] I accomplished all or most of my goals
 - [ ] I used my time wisely
 - [X] I struggled with a problem, but solved it
-- [ ] I ran into an issue I could not solve on my own.
+- [ ] I ran into an issue I could not solve on my own

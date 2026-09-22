@@ -1,0 +1,12 @@
+name: msa_env
+channels:
+  - conda-forge
+  - bioconda
+  - biobakery
+dependencies:
+  - blast
+  - clustalo
+  - seqkit
+  - pal2nal
+  - fasttree
+  - hyphy

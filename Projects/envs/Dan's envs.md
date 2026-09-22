@@ -5,7 +5,6 @@ Note: Use micromamba v1.4.3
 [baqlava_env.yaml]
 ```yaml
 `baqlava_env.yaml`
-```yaml
 name: baqlava_env
 channels:
   - conda-forge
@@ -19,12 +18,12 @@ dependencies:
   - pip:
       - baqlava
 ```
-```
 
-   
-### Waafle:
+### Waafle
 
+[waafle_env.yaml]
 ```yaml
+`waafle_env.yaml`
 name: waafle_env
 channels:
   - conda-forge
@@ -32,13 +31,21 @@ channels:
   - biobakery
 dependencies:
   - waafle
+  - megahit
+```
 
-### Megahit
-name: megahit_env
+
+### MSA
+
+[msa_env.yaml]
+```yaml
+name: msa_env
 channels:
   - conda-forge
   - bioconda
   - biobakery
 dependencies:
-  - megahit
+  - clustalo
+  - seqkit
+  - pal2nal
 ```
