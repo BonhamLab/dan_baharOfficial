@@ -20,7 +20,7 @@ Any further explanation / links
 
 Any further explanation / links
 
-## Is there anything that Kevin can help with?
+## Is there anything that Kevin can help with
 
 ## Periodic survey
 
