@@ -1,6 +1,6 @@
 ## Overview
 
-[BAQLaVa](https://github.com/biobakery/baqlava/blob/master/readme.md#requirements), [MetaPhlAn](https://github.com/biobakery/humann/blob/master/readme.md), and [HUMAnN](https://github.com/biobakery/anadama2/blob/master/readme.rst) are all bioBakery tools that classify metagenomes. MetaPhlAn classifies which taxa are within the metagenome using marker genes. HUMAnN profiles the function by mapping the reads of each taxa against a known database, ChocoPhlAn. Finally, the reads that were not yet captured by MetaPhlAn or HUMAnN may be captured by BAQLaVa, which specializes in viral genome classification. Notbaly, MetaPhlAn is a dependency for HUMAnN; therefore, while it is not explicitly downloaded, it automatically installed with HUMAnN.
+[BAQLaVa](https://github.com/biobakery/baqlava/blob/master/readme.md#requirements), [MetaPhlAn](https://github.com/biobakery/humann/blob/master/readme.md), and [HUMAnN](https://github.com/biobakery/anadama2/blob/master/readme.rst) are all bioBakery tools that classify metagenomes. MetaPhlAn classifies which taxa are within the metagenome using marker genes. HUMAnN profiles the function by mapping the reads of each taxa against a known database, ChocoPhlAn. Finally, the reads that were not yet captured by MetaPhlAn or HUMAnN may be captured by BAQLaVa, which specializes in viral genome classification. Notbaly, MetaPhlAn is a dependency for HUMAnN; therefore, while it is not explicitly downloaded, it automatically installed with HUMAnN. a
 
 ## Dependency installation
 
