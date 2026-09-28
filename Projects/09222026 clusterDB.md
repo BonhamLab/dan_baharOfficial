@@ -1,4 +1,6 @@
-# This is Step 1 of the msa workflow: Creating the cluster database
+### This is Step 1 within the larger nhaA analysis pipeline. The code below creates the gene database from BLAST by combining every gene from every genome into one file, allGenes.ffn 
+
+This is Step 1 of the msa workflow: Creating the cluster database
 ```
 import os
 from Bio import SeqIO
