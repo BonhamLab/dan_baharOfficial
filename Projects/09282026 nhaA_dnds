@@ -1,5 +1,6 @@
 ### nhAa analysis pipeline, please see how I made the original cluster DB here (link)
 
+```
 import subprocess
 from Bio import Blast, SeqIO
 
@@ -34,7 +35,7 @@ subprocess.run(["macse", "-prog", "alignSequences", "-seq", "/home/bahar/danssal
 subprocess.run(["FastTree", "-nt", "-gtr", "/home/bahar/danssaltgenes/nhaA_aligned.fasta"],stdout=open("/home/bahar/danssaltgenes/nhaA_tree.nwk", "w"),)
 
 subprocess.run(["hyphy", "fel","--alignment", "/home/bahar/danssaltgenes/nhaA_aligned.fasta","--tree", "/home/bahar/danssaltgenes/nhaA_tree.nwk",])
-
+```
 
 Some problems that I have encountered, fixed, or will fix in the future:
 - I wish to find a manner to grab the sequence and store it rather than scanning all of the DB again. My combined IDs were over the 50 character limit, so we had to drop -parse_squids that would be able to directly grab each gene directly.
