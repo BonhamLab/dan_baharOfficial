@@ -1,3 +1,5 @@
+# Please note that the following is a shell-only, non-reproducible piece of code. This will be edited in the upcoming weeks.
+
 # STEP 0: Ensure that you are within msa_env
 
 # STEP 1: Make txt with the first ten genomes

@@ -15,4 +15,3 @@ gzip is a command that compresses files, and the -t tag is “testing” (does n
 - Push all Obsidian notes
 - Install, make a protocol for, and familiarize myself with WAAFLE. Install within a different conda environment.
 
-- testtesttest

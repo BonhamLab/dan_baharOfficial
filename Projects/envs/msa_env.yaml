@@ -5,7 +5,7 @@ channels:
   - biobakery
 dependencies:
   - blast
-  - clustalo
+  - mafft
   - seqkit
   - pal2nal
   - fasttree
